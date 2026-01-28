@@ -31,6 +31,14 @@ export default {
     }
   },
 
+  mounted() {
+    const tarefasSalvas = localStorage.getItem('tarefas');
+
+    if (tarefasSalvas) {
+      this.tarefas = JSON.parse(tarefasSalvas);
+    }
+  },
+
   methods: {
     gerar_tarefa(texto) {
       this.tarefas.push({
@@ -44,6 +52,15 @@ export default {
 
     marcar_tarefa(index) {
       this.tarefas[index].feita = !this.tarefas[index].feita;
+    }
+  },
+
+  watch: {
+    tarefas: {
+      handler(tarefas) {
+        localStorage.setItem('tarefas', JSON.stringify(tarefas));
+      },
+      deep: true
     }
   }
 }
