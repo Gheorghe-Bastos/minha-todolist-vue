@@ -1,24 +1,3 @@
-# meu-projeto
+Este projeto foi criado com foco em aprendizado e prática de desenvolvimento web (frontend), utilizando tecnologias modernas para construir uma interface interativa e responsiva.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+🔗 Acesse a versão online do projeto: [minha-todolist-vue.vercel.app](https://minha-todolist-vue.vercel.app/)
